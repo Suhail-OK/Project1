@@ -1,0 +1,23 @@
+{% extends 'newapp/base.html' %}
+{% block content %}
+<div class="container my-5">
+    <div class="row">
+        
+        <div class="col-3 text-center mt-4">
+            <img src="{{object.pic.url}}" alt="No image found" width="250px" height="200px">
+            
+        </div>
+        <div class="col-4">
+            <p><b>Name: </b>{{object.name}}</p>
+            <p><b>Price: </b>{{object.price}}</p>
+            <label for="">No of items: </label>
+            <input type="number" name="number" id=""><br><br>
+            <label for="">Pincode: </label>
+            <input type="number" name="" id=""><br><br>
+            <button class="btn btn-success" onclick="alert('Order Successfull')">Order Now</button>
+        </div>
+    
+    </div>
+</div>
+
+{% endblock %}
